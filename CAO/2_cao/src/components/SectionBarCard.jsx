@@ -5,7 +5,7 @@ const SectionBarCard = (props) => {
   // const { name } = props;
   const { imgsrc1, imgsrc2, text, alt1, alt2 } = props;
   return (
-    <div>
+    <div className="section-card-container">
       <img src={imgsrc1} alt={alt1} />
       <img src={imgsrc2} alt={alt2} />
       <p>{text}</p>

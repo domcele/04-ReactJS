@@ -1,0 +1,10 @@
+.hero-container {
+  position: relative;
+  overflow: auto;
+}
+
+.hero-container img {
+  filter: blur(2px);
+  width: 100%;
+  /* position: relative; */
+}

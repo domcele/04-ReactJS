@@ -1,10 +1,10 @@
 import fma from "../assets/fma.jpg";
-import NavBar from "./NavBar";
+import "./HeroStyle.css";
 
 const Hero = () => {
   // const { name } = props;
   return (
-    <div>
+    <div className="hero-container">
       <img src={fma} alt="fma" />
     </div>
   );
