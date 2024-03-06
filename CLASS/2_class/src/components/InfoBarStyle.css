@@ -1,0 +1,25 @@
+.infoBarContainer {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  height: 1.5rem;
+}
+
+.infoBarList,
+.infoBarLocation,
+.infoBarEmail,
+.infoBarContacts {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.infoBarList p {
+  padding: 0 6px;
+}
+
+.infoBarContainer img {
+  height: 1.2rem;
+  color: burlywood;
+}

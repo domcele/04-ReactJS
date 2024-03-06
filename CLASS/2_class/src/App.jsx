@@ -7,6 +7,7 @@ import WelcomeDestructed from "./components/WelcomeDestructed";
 import "./App.css";
 import FuncDiv from "./components/FuncDiv.jsx";
 import ClassDiv from "./components/ClassDiv.jsx";
+import InfoBar from "../../2_class/src/components/InfoBar";
 
 function App() {
   return (
@@ -42,6 +43,18 @@ function App() {
           <ClassDiv h3="Todays topic" paragraph="Class" />
         </div>
       </div>
+      <InfoBar
+        altInfoLock={"location"}
+        infographLoc={"Kur mus rasti"}
+        altInfoEm={"email"}
+        infographEm={"Rasykite mums"}
+        altInfoCont={"contacts"}
+        infographCont={"1842"}
+        infographComp={"Apie imone"}
+        infographPren={"E. prenumerata"}
+        infographFil={"E. filatelija"}
+        infographLang={"EN"}
+      />
     </div>
   );
 }
