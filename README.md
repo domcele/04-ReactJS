@@ -13,3 +13,4 @@ ES7+ React/Redux/React-Native snippets ir rafce komanda
 children prop - Title
 import PropTypes from "prop-types";
 Hero.propTypes = {title: PropTypes.string.isRequired, subtitle: PropTypes.string, color: PropTypes.string};
+Ternary išraiškos ? : if else; && if
