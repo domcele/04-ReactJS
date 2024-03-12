@@ -1,0 +1,37 @@
+#root {
+  box-sizing: border-box;
+  font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  padding-top: 8px;
+  margin: 0 15px;
+  /* background-color: rgb(240, 242, 245); */
+}
+
+@media screen and (min-width: 900px) {
+  #root {
+    background-color: rgb(240, 242, 245);
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 40px;
+    padding-top: 102px;
+    width: auto;
+  }
+
+  body {
+    background-color: rgb(240, 242, 245);
+  }
+
+  .rootContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .heroContainer {
+    width: 45%;
+  }
+  /* .loginContainer {
+    width: 55%;
+  } */
+}
