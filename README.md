@@ -14,3 +14,4 @@ children prop - Title
 import PropTypes from "prop-types";
 Hero.propTypes = {title: PropTypes.string.isRequired, subtitle: PropTypes.string, color: PropTypes.string};
 Ternary išraiškos ? : if else; && if
+const [count, setCount] = useState(0); - count yra state (kintamasis), setCount yra setState (updateris)
