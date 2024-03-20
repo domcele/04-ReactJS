@@ -11,11 +11,13 @@ const Header = () => {
     <>
       <Logo />
       <Nav />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/news" element={<News />} />
-      </Routes>
+      <div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/news" element={<News />} />
+        </Routes>
+      </div>
     </>
   );
 };

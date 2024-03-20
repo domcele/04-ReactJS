@@ -1,4 +1,5 @@
 const News = () => {
+  fetch;
   return <div>News</div>;
 };
 
