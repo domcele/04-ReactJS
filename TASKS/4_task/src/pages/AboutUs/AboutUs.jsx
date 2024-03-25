@@ -3,6 +3,7 @@ const AboutUs = () => {
     <div>
       <h1>CANYON</h1>
       <img
+        width={"100%"}
         src="https://pbs.twimg.com/media/FwzCyfoXsAAu2Q5.jpg"
         alt="canyon workshop"
       />

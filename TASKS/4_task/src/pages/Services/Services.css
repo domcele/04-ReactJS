@@ -1,0 +1,21 @@
+.servOl {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.servLi {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: bold;
+  width: 300px;
+}
+
+.servUl {
+  padding-top: 10px;
+  font-weight: normal;
+  font-style: italic;
+}
