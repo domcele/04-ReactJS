@@ -1,11 +1,11 @@
 import Home from "../pages/Home";
 import PetList from "../pages/PetList";
-import Pet from "../pages/Pet";
+import Pets from "../pages/Pets";
 
 export const ROUTES = {
   HOME: "/",
   PETLIST: "/petlist",
-  PET: "/pet",
+  PETS: "/pets",
 };
 
 export const routes = [
@@ -18,7 +18,7 @@ export const routes = [
     Component: PetList,
   },
   {
-    path: ROUTES.PET,
-    Component: Pet,
+    path: ROUTES.PETS,
+    Component: Pets,
   },
 ];

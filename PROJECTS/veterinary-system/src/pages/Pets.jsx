@@ -1,30 +1,29 @@
 import { useState, useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { fetchPets } from "../api/pets";
+import { PetList } from "./PetList";
 import { ROUTES } from "../routes/consts";
 
-const Pet = () => {
-  const { id } = useParams();
-  const { pet, setPets } = useState(null);
+const Pets = () => {
+  const [pets, setPets] = useState([]);
 
   useEffect(() => {
     fetchPets()
       .then((response) => {
-        const foundPet = response.fin((pet) => pet.id === +id);
-        setPets(foundPet);
+        setPets(response);
       })
       .catch((error) => console.error(error));
-  });
+  }, []);
 
   return (
     <div>
       <Link to={ROUTES.HOME}>Go back</Link>
       <h1>Pet information</h1>
       <div>
-        {pet.name} {pet.id}
+        <PetList pets={pets} />
       </div>
     </div>
   );
 };
 
-export default Pet;
+export default Pets;

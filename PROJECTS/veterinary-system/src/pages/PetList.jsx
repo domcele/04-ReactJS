@@ -7,7 +7,7 @@ const PetList = ({ pets }) => {
     <ul>
       {pets.map((pet) => (
         <li key={pet.id}>
-          <Link to={generatePath(ROUTES.PET, { id: pet.id })}>
+          <Link to={generatePath(ROUTES.PETS, { id: pet.id })}>
             {pet.name} {pet.id}
           </Link>
         </li>

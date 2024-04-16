@@ -1,7 +1,13 @@
+import Topbar from "./components/Topbar";
 import AppRoutes from "./routes/AppRoutes";
 
 const App = () => {
-  return <AppRoutes />;
+  return (
+    <div>
+      <Topbar />
+      <AppRoutes />
+    </div>
+  );
 };
 
 export default App;
