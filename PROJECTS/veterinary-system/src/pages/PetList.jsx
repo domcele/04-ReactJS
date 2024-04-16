@@ -17,7 +17,7 @@ const PetList = ({ pets }) => {
 };
 
 PetList.propTypes = {
-  pets: PropTypes.array.isRequired,
+  pets: PropTypes.array,
 };
 
 export default PetList;
