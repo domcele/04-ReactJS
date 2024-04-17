@@ -2,14 +2,20 @@ import PropTypes from "prop-types";
 import { Link, generatePath } from "react-router-dom";
 import { ROUTES } from "../routes/consts";
 
-const PetList = ({ pets }) => {
+export const PetList = ({ pets, handleEditPet }) => {
   return (
     <ul>
       {pets.map((pet) => (
         <li key={pet.id}>
-          <Link to={generatePath(ROUTES.PETS, { id: pet.id })}>
-            {pet.name} {pet.id}
+          <Link to={generatePath(ROUTES.PET, { id: pet.id })}>
+            {pet.id} {pet.name}
           </Link>
+          <button
+            onClick={() => handleEditPet(pet.id)}
+            style={{ marginLeft: 16 }}
+          >
+            Edit
+          </button>
         </li>
       ))}
     </ul>
@@ -18,6 +24,5 @@ const PetList = ({ pets }) => {
 
 PetList.propTypes = {
   pets: PropTypes.array,
+  handleEditPet: PropTypes.func,
 };
-
-export default PetList;
