@@ -7,7 +7,7 @@ export const PetList = ({ pets, handleEditPet }) => {
     <ul>
       {pets.map((pet) => (
         <li key={pet.id}>
-          <Link to={generatePath(ROUTES.PET, { id: pet.id })}>
+          <Link to={generatePath(ROUTES.PETS, { id: pet.id })}>
             {pet.id} {pet.name}
           </Link>
           <button

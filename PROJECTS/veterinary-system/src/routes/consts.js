@@ -1,9 +1,9 @@
 import Home from "../pages/Home";
-import Pet from "../pages/Pet";
+import Pets from "../pages/Pets";
 
 export const ROUTES = {
   HOME: "/",
-  PET: "/:id",
+  PETS: "/:id",
 };
 
 export const routes = [
@@ -12,7 +12,7 @@ export const routes = [
     Component: Home,
   },
   {
-    path: ROUTES.PET,
-    Component: Pet,
+    path: ROUTES.PETS,
+    Component: Pets,
   },
 ];

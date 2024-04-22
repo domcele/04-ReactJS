@@ -4,17 +4,17 @@ import { fetchPets } from "../api/pets";
 import { PetList } from "./PetList";
 import { ROUTES } from "../routes/consts";
 
-const Pet = () => {
+const Pets = () => {
   const { id } = useParams();
-  const [pet, setPet] = useState(null);
+  const [pets, setPets] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     fetchPets()
       .then((response) => {
-        const foundPet = response.find((pet) => pet.id === +id);
-        setPet(foundPet);
-        console.log(foundPet);
+        const foundPets = response.find((pet) => pet.id === +id);
+        setPets(foundPets);
+        console.log(foundPets);
       })
       .catch((error) => console.error(error))
       .finally(() => {
@@ -27,18 +27,18 @@ const Pet = () => {
       <Link to={ROUTES.HOME}>Go back</Link>
       <h2>Pet information</h2>
       {isLoading && <div>Loading...</div>}
-      {!isLoading && !pet && (
+      {!isLoading && !pets && (
         <div>
           <strong>Pet not found</strong>
         </div>
       )}
-      {!isLoading && pet && (
+      {!isLoading && pets && (
         <div>
-          <PetList pets={[pet]} />
+          <PetList pets={[pets]} />
         </div>
       )}
     </div>
   );
 };
 
-export default Pet;
+export default Pets;
